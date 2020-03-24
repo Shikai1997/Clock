@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body {
+  background-color: #293b29;
+}
+.container {
+  width: 600px;
+  margin: 0 auto;
+  .timeBar {
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    .nowTime {
+      width: 300px;
+      height: 100px;
+      text-align: center;
+      font-size: 48px;
+      color: #fff;
+    }
+  }
+  .clock {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 350px;
+    background-color: #3d5a46;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .panel {
+      width: 310px;
+      height: 310px;
+      border-radius: 50%;
+      background-color: #283a28;
+      border: 3px solid #212f0b;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      .scale {
+        width: 250px;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        @for $i from 0 to 31 {
+          .n-#{$i} {
+            transform: rotate(90deg + $i * 6);
+            /*第一个span塞数字*/
+            span:nth-of-type(1) {
+              @if ($i) %5 ==0 {
+                width: 10px;
+                height: 3px;
+                background-color: #fe7600;
+                border-radius: 0;
+              }
+            }
+            /*第2个span塞数字*/
+            span:nth-of-type(2) {
+              @if ($i) %5 ==0 {
+                width: 10px;
+                height: 3px;
+                background-color: #fe7600;
+                border-radius: 0;
+              }
+            }
+          }
+        }
+        /*样式*/
+        .test {
+          position: absolute;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          span {
+            width: 3px;
+            height: 3px;
+            background-color: #fff;
+            border-radius: 50%;
+            position: relative;
+          }
+        }
+      }
+
+      /*数字样式*/
+      .num {
+        width: 310px;
+        height: 310px;
+        position: absolute;
+        color: #fff;
+        font-size: 28px;
+        div {
+          width: 100%;
+          height: 100%;
+          position: relative;
+          span {
+            &:nth-of-type(1) {
+              position: absolute;
+              right: 10px;
+              top: calc(50% - 16px);
+            }
+            &:nth-of-type(2) {
+              position: absolute;
+              bottom: 0;
+              left: calc(50% - 7px);
+            }
+            &:nth-of-type(3) {
+              position: absolute;
+              left: 10px;
+              top: calc(50% - 16px);
+            }
+            &:nth-of-type(4) {
+              position: absolute;
+              top: 0;
+              left: calc(50% - 14px);
+            }
+          }
+        }
+      }
+      .pointer {
+        width: 310px;
+        height: 310px;
+        position: absolute;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        div {
+          position: relative;
+          #hour {
+            position: absolute;
+            top: -0;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            border-radius: 10px;
+            background-color: red;
+            transform: rotate(180deg);
+            transform-origin: 0 0;
+          }
+          #min {
+            position: absolute;
+            top: -0;
+            left: 0;
+            width: 80px;
+            height: 3px;
+            border-radius: 20px;
+            background-color: orange;
+            transform: rotate(180deg);
+            transform-origin: 0 0;
+          }
+          #sec {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100px;
+            height: 2px;
+            border-radius: 30px;
+            background-color: #fff;
+            transform: rotate(180deg);
+            transform-origin: 0 0;
+          }
+          &:before {
+            content: "";
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #fff;
+            z-index: 3;
+          }
+        }
+      }
+    }
+  }
+}
