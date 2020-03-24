@@ -1,0 +1,536 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  background-color: #293b29;
+}
+
+.container {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.container .timeBar {
+  margin-top: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .timeBar .nowTime {
+  width: 300px;
+  height: 100px;
+  text-align: center;
+  font-size: 48px;
+  color: #fff;
+}
+
+.container .clock {
+  margin: 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 350px;
+  height: 350px;
+  background-color: #3d5a46;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .clock .panel {
+  width: 310px;
+  height: 310px;
+  border-radius: 50%;
+  background-color: #283a28;
+  border: 3px solid #212f0b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  /*数字样式*/
+}
+
+.container .clock .panel .scale {
+  width: 250px;
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  /*样式*/
+}
+
+.container .clock .panel .scale .n-0 {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  /*第一个span塞数字*/
+  /*第2个span塞数字*/
+}
+
+.container .clock .panel .scale .n-0 span:nth-of-type(1) {
+  width: 10px;
+  height: 3px;
+  background-color: #fe7600;
+  border-radius: 0;
+}
+
+.container .clock .panel .scale .n-0 span:nth-of-type(2) {
+  width: 10px;
+  height: 3px;
+  background-color: #fe7600;
+  border-radius: 0;
+}
+
+.container .clock .panel .scale .n-1 {
+  -webkit-transform: rotate(96deg);
+          transform: rotate(96deg);
+  /*第一个span塞数字*/
+  /*第2个span塞数字*/
+}
+
+.container .clock .panel .scale .n-2 {
+  -webkit-transform: rotate(102deg);
+          transform: rotate(102deg);
+  /*第一个span塞数字*/
+  /*第2个span塞数字*/
+}
+
+.container .clock .panel .scale .n-3 {
+  -webkit-transform: rotate(108deg);
+          transform: rotate(108deg);
+  /*第一个span塞数字*/
+  /*第2个span塞数字*/
+}
+
+.container .clock .panel .scale .n-4 {
+  -webkit-transform: rotate(114deg);
+          transform: rotate(114deg);
+  /*第一个span塞数字*/
+  /*第2个span塞数字*/
+}
+
+.container .clock .panel .scale .n-5 {
+  -webkit-transform: rotate(120deg);
+          transform: rotate(120deg);
+  /*第一个span塞数字*/
+  /*第2个span塞数字*/
+}
+
+.container .clock .panel .scale .n-5 span:nth-of-type(1) {
+  width: 10px;
+  height: 3px;
+  background-color: #fe7600;
+  border-radius: 0;
+}
+
+.container .clock .panel .scale .n-5 span:nth-of-type(2) {
+  width: 10px;
+  height: 3px;
+  background-color: #fe7600;
+  border-radius: 0;
+}
+
+.container .clock .panel .scale .n-6 {
+  -webkit-transform: rotate(126deg);
+          transform: rotate(126deg);
+  /*第一个span塞数字*/
+  /*第2个span塞数字*/
+}
+
+.container .clock .panel .scale .n-7 {
+  -webkit-transform: rotate(132deg);
+          transform: rotate(132deg);
+  /*第一个span塞数字*/
+  /*第2个span塞数字*/
+}
+
+.container .clock .panel .scale .n-8 {
+  -webkit-transform: rotate(138deg);
+          transform: rotate(138deg);
+  /*第一个span塞数字*/
+  /*第2个span塞数字*/
+}
+
+.container .clock .panel .scale .n-9 {
+  -webkit-transform: rotate(144deg);
+          transform: rotate(144deg);
+  /*第一个span塞数字*/
+  /*第2个span塞数字*/
+}
+
+.container .clock .panel .scale .n-10 {
+  -webkit-transform: rotate(150deg);
+          transform: rotate(150deg);
+  /*第一个span塞数字*/
+  /*第2个span塞数字*/
+}
+
+.container .clock .panel .scale .n-10 span:nth-of-type(1) {
+  width: 10px;
+  height: 3px;
+  background-color: #fe7600;
+  border-radius: 0;
+}
+
+.container .clock .panel .scale .n-10 span:nth-of-type(2) {
+  width: 10px;
+  height: 3px;
+  background-color: #fe7600;
+  border-radius: 0;
+}
+
+.container .clock .panel .scale .n-11 {
+  -webkit-transform: rotate(156deg);
+          transform: rotate(156deg);
+  /*第一个span塞数字*/
+  /*第2个span塞数字*/
+}
+
+.container .clock .panel .scale .n-12 {
+  -webkit-transform: rotate(162deg);
+          transform: rotate(162deg);
+  /*第一个span塞数字*/
+  /*第2个span塞数字*/
+}
+
+.container .clock .panel .scale .n-13 {
+  -webkit-transform: rotate(168deg);
+          transform: rotate(168deg);
+  /*第一个span塞数字*/
+  /*第2个span塞数字*/
+}
+
+.container .clock .panel .scale .n-14 {
+  -webkit-transform: rotate(174deg);
+          transform: rotate(174deg);
+  /*第一个span塞数字*/
+  /*第2个span塞数字*/
+}
+
+.container .clock .panel .scale .n-15 {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  /*第一个span塞数字*/
+  /*第2个span塞数字*/
+}
+
+.container .clock .panel .scale .n-15 span:nth-of-type(1) {
+  width: 10px;
+  height: 3px;
+  background-color: #fe7600;
+  border-radius: 0;
+}
+
+.container .clock .panel .scale .n-15 span:nth-of-type(2) {
+  width: 10px;
+  height: 3px;
+  background-color: #fe7600;
+  border-radius: 0;
+}
+
+.container .clock .panel .scale .n-16 {
+  -webkit-transform: rotate(186deg);
+          transform: rotate(186deg);
+  /*第一个span塞数字*/
+  /*第2个span塞数字*/
+}
+
+.container .clock .panel .scale .n-17 {
+  -webkit-transform: rotate(192deg);
+          transform: rotate(192deg);
+  /*第一个span塞数字*/
+  /*第2个span塞数字*/
+}
+
+.container .clock .panel .scale .n-18 {
+  -webkit-transform: rotate(198deg);
+          transform: rotate(198deg);
+  /*第一个span塞数字*/
+  /*第2个span塞数字*/
+}
+
+.container .clock .panel .scale .n-19 {
+  -webkit-transform: rotate(204deg);
+          transform: rotate(204deg);
+  /*第一个span塞数字*/
+  /*第2个span塞数字*/
+}
+
+.container .clock .panel .scale .n-20 {
+  -webkit-transform: rotate(210deg);
+          transform: rotate(210deg);
+  /*第一个span塞数字*/
+  /*第2个span塞数字*/
+}
+
+.container .clock .panel .scale .n-20 span:nth-of-type(1) {
+  width: 10px;
+  height: 3px;
+  background-color: #fe7600;
+  border-radius: 0;
+}
+
+.container .clock .panel .scale .n-20 span:nth-of-type(2) {
+  width: 10px;
+  height: 3px;
+  background-color: #fe7600;
+  border-radius: 0;
+}
+
+.container .clock .panel .scale .n-21 {
+  -webkit-transform: rotate(216deg);
+          transform: rotate(216deg);
+  /*第一个span塞数字*/
+  /*第2个span塞数字*/
+}
+
+.container .clock .panel .scale .n-22 {
+  -webkit-transform: rotate(222deg);
+          transform: rotate(222deg);
+  /*第一个span塞数字*/
+  /*第2个span塞数字*/
+}
+
+.container .clock .panel .scale .n-23 {
+  -webkit-transform: rotate(228deg);
+          transform: rotate(228deg);
+  /*第一个span塞数字*/
+  /*第2个span塞数字*/
+}
+
+.container .clock .panel .scale .n-24 {
+  -webkit-transform: rotate(234deg);
+          transform: rotate(234deg);
+  /*第一个span塞数字*/
+  /*第2个span塞数字*/
+}
+
+.container .clock .panel .scale .n-25 {
+  -webkit-transform: rotate(240deg);
+          transform: rotate(240deg);
+  /*第一个span塞数字*/
+  /*第2个span塞数字*/
+}
+
+.container .clock .panel .scale .n-25 span:nth-of-type(1) {
+  width: 10px;
+  height: 3px;
+  background-color: #fe7600;
+  border-radius: 0;
+}
+
+.container .clock .panel .scale .n-25 span:nth-of-type(2) {
+  width: 10px;
+  height: 3px;
+  background-color: #fe7600;
+  border-radius: 0;
+}
+
+.container .clock .panel .scale .n-26 {
+  -webkit-transform: rotate(246deg);
+          transform: rotate(246deg);
+  /*第一个span塞数字*/
+  /*第2个span塞数字*/
+}
+
+.container .clock .panel .scale .n-27 {
+  -webkit-transform: rotate(252deg);
+          transform: rotate(252deg);
+  /*第一个span塞数字*/
+  /*第2个span塞数字*/
+}
+
+.container .clock .panel .scale .n-28 {
+  -webkit-transform: rotate(258deg);
+          transform: rotate(258deg);
+  /*第一个span塞数字*/
+  /*第2个span塞数字*/
+}
+
+.container .clock .panel .scale .n-29 {
+  -webkit-transform: rotate(264deg);
+          transform: rotate(264deg);
+  /*第一个span塞数字*/
+  /*第2个span塞数字*/
+}
+
+.container .clock .panel .scale .n-30 {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  /*第一个span塞数字*/
+  /*第2个span塞数字*/
+}
+
+.container .clock .panel .scale .n-30 span:nth-of-type(1) {
+  width: 10px;
+  height: 3px;
+  background-color: #fe7600;
+  border-radius: 0;
+}
+
+.container .clock .panel .scale .n-30 span:nth-of-type(2) {
+  width: 10px;
+  height: 3px;
+  background-color: #fe7600;
+  border-radius: 0;
+}
+
+.container .clock .panel .scale .test {
+  position: absolute;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .clock .panel .scale .test span {
+  width: 3px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: relative;
+}
+
+.container .clock .panel .num {
+  width: 310px;
+  height: 310px;
+  position: absolute;
+  color: #fff;
+  font-size: 28px;
+}
+
+.container .clock .panel .num div {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.container .clock .panel .num div span:nth-of-type(1) {
+  position: absolute;
+  right: 10px;
+  top: calc(50% - 16px);
+}
+
+.container .clock .panel .num div span:nth-of-type(2) {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 7px);
+}
+
+.container .clock .panel .num div span:nth-of-type(3) {
+  position: absolute;
+  left: 10px;
+  top: calc(50% - 16px);
+}
+
+.container .clock .panel .num div span:nth-of-type(4) {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 14px);
+}
+
+.container .clock .panel .pointer {
+  width: 310px;
+  height: 310px;
+  position: absolute;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .clock .panel .pointer div {
+  position: relative;
+}
+
+.container .clock .panel .pointer div #hour {
+  position: absolute;
+  top: -0;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  border-radius: 10px;
+  background-color: red;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+}
+
+.container .clock .panel .pointer div #min {
+  position: absolute;
+  top: -0;
+  left: 0;
+  width: 80px;
+  height: 3px;
+  border-radius: 20px;
+  background-color: orange;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+}
+
+.container .clock .panel .pointer div #sec {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 2px;
+  border-radius: 30px;
+  background-color: #fff;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+}
+
+.container .clock .panel .pointer div:before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  z-index: 3;
+}
+/*# sourceMappingURL=all.css.map */
