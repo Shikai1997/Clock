@@ -1,7 +1,7 @@
 ## Clock
   ## 六角題目篇 - 新手js地下城
   
-  [時鐘](https://shikai1997.github.io/Clock/)
+  * [DEMO](https://shikai1997.github.io/Clock/)
   
   * [參考六角學院設計稿](https://xd.adobe.com/spec/43be2f02-1d11-4dfb-4e3d-5c4df1df3896-358f/screen/e7b79d5d-37bb-41f7-8ca2-9df3811589e9/003-clock/)
   * 使用原生js語法
