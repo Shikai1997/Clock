@@ -490,8 +490,8 @@ body {
   background-color: red;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  -webkit-transform-origin: 0 0;
-          transform-origin: 0 0;
+  -webkit-transform-origin: 0;
+          transform-origin: 0;
 }
 
 .container .clock .panel .pointer div #min {
@@ -504,8 +504,8 @@ body {
   background-color: orange;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  -webkit-transform-origin: 0 0;
-          transform-origin: 0 0;
+  -webkit-transform-origin: 0;
+          transform-origin: 0;
 }
 
 .container .clock .panel .pointer div #sec {
@@ -518,8 +518,8 @@ body {
   background-color: #fff;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  -webkit-transform-origin: 0 0;
-          transform-origin: 0 0;
+  -webkit-transform-origin: 0;
+          transform-origin: 0;
 }
 
 .container .clock .panel .pointer div:before {
