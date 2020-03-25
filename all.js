@@ -7,9 +7,10 @@ let hourPointer = document.querySelector('#hour');
 let minPointer = document.querySelector('#min');
 let secPointer = document.querySelector('#sec');
 
-//onload取得时间  避免出现空白
+//onload取得時間並渲染  避免出現空窗空白
 window.onload = ()=>getTime();
-//创造刻度
+
+//創造刻度
 (function creatScale() {
   let str = "";
   for (let i = 1; i <= 30; i++) {
@@ -21,7 +22,7 @@ window.onload = ()=>getTime();
   scale.innerHTML = str;
 })();
 
-//创造外围数字
+//創造外圍數字
 (function creatNum(){
     let str = '<div>';
     for(let i = 0; i<4; i++){
@@ -31,7 +32,7 @@ window.onload = ()=>getTime();
     num.innerHTML = str;
 })();
 
-//取得时间
+//取得時間
 function getTime(){
     let time = new Date();
     let h = time.getHours().toString();
@@ -40,9 +41,9 @@ function getTime(){
     hour.innerHTML = h<10? '0'+h :h;
     min.innerHTML = m<10? '0'+m : m;
     sec.innerHTML = s<10? '0'+s : s;
-    //指针移动
+    //指針移動
     function runPointer(){
-        //0度在水平线  需-90度让0度变成垂直线
+        //水平線為0度  -90修正角度
         hourPointer.style.transform = "rotate(" + (((h*30)-90)+(m/2)) + "deg)";
         minPointer.style.transform = "rotate(" + ((m*6)-90) + "deg)";
         secPointer.style.transform = "rotate(" + ((s*6)-90) + "deg)";
@@ -51,7 +52,7 @@ function getTime(){
     
 }
 
-//定时器
+//定時器
 setInterval(() => {
     getTime();
 }, 1000);
