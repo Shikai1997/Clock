@@ -1,5 +1,5 @@
 ## Clock
-  ## 六角題目篇 - 新手js地下城
+  ## 六角題目篇 - 新手js地下城 - 時鐘
   
   * [DEMO](https://shikai1997.github.io/Clock/)
   
