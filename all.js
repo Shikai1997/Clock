@@ -42,7 +42,8 @@ function getTime(){
     sec.innerHTML = s<10? '0'+s : s;
     //指针移动
     function runPointer(){
-        hourPointer.style.transform = "rotate(" + ((h*30)-90) + "deg)";
+        //0度在水平线  需-90度让0度变成垂直线
+        hourPointer.style.transform = "rotate(" + (((h*30)-90)+(m/2)) + "deg)";
         minPointer.style.transform = "rotate(" + ((m*6)-90) + "deg)";
         secPointer.style.transform = "rotate(" + ((s*6)-90) + "deg)";
     }
